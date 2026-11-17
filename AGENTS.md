@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Salon contact data and the WhatsApp number live in `src/config/site.ts`; components read from it so contacts change in one place.
+- The landing page is a single route (`src/routes/index.tsx`) with in-page anchor sections, because the brief forbids extra pages.
